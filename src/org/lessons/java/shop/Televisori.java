@@ -35,5 +35,11 @@ public class Televisori extends Prodotto {
     public void setIsSmartTv(boolean setIsSmartTv) {
         this.isSmartTv = isSmartTv;
     }
+
+    // toString
+    public String toString() {
+        String tvIsSmart = isSmartTv ? "smart TV" : "non smart TV";
+        return String.format("Televisore %s, %s, prezzo: " + this.getPrezzo() + "€", this.nome, tvIsSmart);
+    }
     
 }
