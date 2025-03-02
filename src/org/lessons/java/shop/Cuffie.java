@@ -3,8 +3,8 @@ package org.lessons.java.shop;
 import java.math.BigDecimal;
 
 public class Cuffie extends Prodotto {
-    String color;
-    boolean isWireless;
+    protected String color;
+    protected boolean isWireless;
 
     // * costruttori
     public Cuffie(String nome, String marca, BigDecimal prezzo, String color, boolean isWireless) {
