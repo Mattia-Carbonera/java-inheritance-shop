@@ -53,4 +53,9 @@ public class Prodotto {
     public void setPrezzo(BigDecimal prezzo) {
         this.prezzo = prezzo;
     }
+
+    // toString
+    public String toString() {
+        return String.format("Prodotto %s, di marca %s, prezzo: " + this.getPrezzo() + "€", this.nome, this.marca);
+    }
 }

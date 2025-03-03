@@ -35,5 +35,11 @@ public class Cuffie extends Prodotto {
     public void setIsWireless(boolean isWireless) {
         this.isWireless = isWireless;
     }
+
+    // toString
+    @Override
+    public String toString() {
+        return String.format("Cuffie %s %S di colore %s, prezzo: " + this.getPrezzo() + "€", this.nome, this.marca, this.color);
+    }
     
 }
