@@ -37,6 +37,7 @@ public class Cuffie extends Prodotto {
     }
 
     // toString
+    @Override
     public String toString() {
         return String.format("Cuffie %s %S di colore %s, prezzo: " + this.getPrezzo() + "€", this.nome, this.marca, this.color);
     }

@@ -37,6 +37,7 @@ public class Televisori extends Prodotto {
     }
 
     // toString
+    @Override
     public String toString() {
         String tvIsSmart = isSmartTv ? "smart TV" : "non smart TV";
         return String.format("Televisore %s, %s, prezzo: " + this.getPrezzo() + "€", this.nome, tvIsSmart);

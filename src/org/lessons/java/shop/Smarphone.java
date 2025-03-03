@@ -34,6 +34,7 @@ public class Smarphone extends Prodotto {
     }
 
     // toString
+    @Override
     public String toString() {
         return String.format("%s con %d Gb di memoria, prezzo: " + this.getPrezzo() + "€", this.nome, this.capacitaMemoria);
     }
